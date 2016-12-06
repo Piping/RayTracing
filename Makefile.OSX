@@ -1,0 +1,4 @@
+a.out: graphic.cpp Makefile.OSX graphic.h matrix.h userinterface.h vertex3d.h piexl.h
+	g++-5 -fopenmp -g -O3 -std=c++11  graphic.cpp -I /usr/local/include -I../include -L../lib -lglfw3 -lAntTweakBar -framework OpenGL  
+clean:
+	rm a.out
